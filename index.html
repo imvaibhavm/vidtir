@@ -35,9 +35,9 @@
         }
 
         .profile-pic {
-            width: 150px;
+            width: 130px;
             height: 150px;
-            border-radius: 10px;
+            border-radius: 104px;
             margin-bottom: 20px;
         }
 
@@ -62,27 +62,10 @@
             font-weight: bold;
         }
 
-        .description {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #4d004d;
-        }
-
         .bio, .education p {
             color: #4d004d;
             line-height: 1.6;
             margin-bottom: 10px;
-        }
-
-        strong {
-            font-weight: bold;
-            color: #4d004d;
-        }
-        
-        strong2 {
-            font-weight: bold;
-            color: white;
         }
 
         .social-media {
@@ -129,38 +112,42 @@
         .container2 {
             position: relative;
             display: inline-block;
+            margin-bottom: 20px;
         }
 
         /* Logo styling */
         .logo {
             width: 100px;
+            height: 100px;
+            border-radius: 104px;
             cursor: pointer;
         }
 
         /* Centered overlay box styling */
         .overlay-box {
-            position: fixed; /* Change to fixed to center it on the screen */
+            position: fixed;
             top: 50%;
             left: 50%;
-            width: 80vw;              /* Set width to 80% of the viewport width */
-            max-width: 700px;         /* Maximum width to prevent it from being too wide */
-            max-height: 60vh;         /* Maximum height limited to 60% of viewport height */
+            width: 80vw;
+            max-width: 700px;
+            max-height: 60vh;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9);
-            color: white !important;  /* Force text color to white */
+            background-color: #CB9DF0;
+            color: white;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            text-align: left;         /* Left-align text for readability */
-            overflow-y: auto;         /* Add scroll if content exceeds max height */
+            text-align: left;
+            overflow-y: auto;
             opacity: 0;
-            pointer-events: none;     /* Prevents interaction when not visible */
-            transition: opacity 0.3s ease; /* Removed color transition */
+            pointer-events: none;
+            z-index: 1000;
+            transition: opacity 0.3s ease;
         }
 
-        /* Display overlay box on logo hover */
+        /* Display overlay on hover */
         .container2:hover .overlay-box {
-            opacity: 100;
-            pointer-events: auto;     /* Enables interaction when visible */
+            opacity: 1;
+            pointer-events: auto;
         }
 
         /* Close button styling */
@@ -178,15 +165,10 @@
 <body>
     <div class="container">
         <div class="profile">
-            <img src="profile.jpg" alt="Vidushi Tiwari" class="profile-pic">
+            <img src="profile.png" alt="Vidushi Tiwari" class="profile-pic">
             <h1>Vidushi Tiwari</h1>
             <p class="pronouns">(she/her)</p>
             <p class="role">Designer, Photographer, Model</p>
-        </div>
-
-        <div class="about">
-            <p class="description"></p>
-            <p class="bio">With 3 years of experience in designing user-friendly interfaces for web and mobile applications. Creative and detail-oriented, proficient in conducting user research, wireframing, prototyping, and creating visually appealing designs.</p>
         </div>
 
         <div class="experience">
@@ -194,11 +176,8 @@
 
             <!-- Container for logo and overlay -->
             <div class="container2">
-                <!-- Logo -->
-                <img src="logo.png" alt="Logo" class="logo">
-                <!-- Centered Overlay Box -->
+                <img src="travelyaari.png" alt="TravelYaari Logo" class="logo">
                 <div class="overlay-box">
-                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
                     <p><strong2>UI/UX Designer at TravelYaari</strong2> Feb 2022 to Present</p>
                     <p><strong2>Government Projects Expertise:</strong2> Spearheaded the design of mobile applications and websites for various state government bus services, including Kerala and Karnataka. Delivered user-friendly, efficient solutions tailored to the needs of public transportation systems.</p>
                     <p><strong2>End-to-End Design Solutions:</strong2> Developed comprehensive digital experiences for bus and cargo services, ensuring seamless functionality from initial user interaction to final booking and service execution.</p>
@@ -209,51 +188,49 @@
                 </div>
             </div>
 
-            <!-- Container for logo and overlay -->
+            <!-- Another logo and overlay -->
             <div class="container2">
-                <!-- Logo -->
-                <img src="logo2.png" alt="Logo2" class="logo">
-                <!-- Centered Overlay Box -->
+                <img src="cleartrip.png" alt="Cleartrip Logo" class="logo">
                 <div class="overlay-box">
-                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
                     <p><strong2>UI/UX Designer at Cleartrip:</strong2> Aug 2022 to Oct 2022 (3 months)</p>
                     <p><strong2>Client-Centric Design:</strong2> Collaborated closely with Cleartrip as a client, leading the design of their bus booking flow for the mobile application to enhance the user experience, delivering a product that met both user needs and client goals.</p>
                     <p><strong2>User Journey Analysis:</strong2> Conducted in-depth user behavior analysis to identify pain points and opportunities, leading to a design that reduced friction and improved overall user satisfaction.</p>
                     <p><strong2>Responsive & Accessible Design:</strong2> Ensured the design was fully responsive and accessible, providing a consistent and user-friendly experience across all devices.</p>
+               
                 </div>
             </div>
 
-            <!-- Container for logo and overlay -->
+            <!-- Another logo and overlay -->
             <div class="container2">
-                <!-- Logo -->
-                <img src="logo2.png" alt="Logo2" class="logo">
-                <!-- Centered Overlay Box -->
+                <img src="unifinance.png" alt="Unfinance Logo" class="logo">
                 <div class="overlay-box">
-                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
-                    <p><strong2>Intern Graphic Designer at Unfinance:</strong2></p>
+<p><strong2>Intern Graphic Designer at Unfinance:</strong2></p>
                     <p><strong2>Community Engagement:</strong2> Designed user interfaces and graphics for India's leading community of millennial investors, increasing user interaction and participation.</p>
                     <p><strong2>Visual Design for Promotions:</strong2> Developed visual designs for promotional campaigns that significantly increased engagement and awareness.</p>
+                
                 </div>
             </div>
         </div>
-
-        <div class="education">
+                <div class="education">
             <h2>Education</h2>
-            <p><strong>B.A. in Design, National Institute of Design, Ahmedabad (2022)</strong></p>
-            <p>Focused on user experience design and visual communication. Developed a solid foundation in design principles and practices.</p>
+            <p>UI/UX Design - Dropout Academy (July 2021 - Dec 2021)</p>
+            <p>MA English Literature - PT. Shambhunath University (2020-2022)
+</p><p> BA Economics - JDMC Delhi University (2016-2019)
+
+</p>
         </div>
 
         <div class="social-media">
             <h2>Connect with Me</h2>
             <div class="icons">
-                <a href="https://www.linkedin.com/in/vidushi-tiwari" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/vidushi_tiwari" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-                <a href="https://github.com/vidushi-tiwari" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/vidushi-tiwari-6422641b5/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/vidushi.20/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                <a href="mailto:vidushitiwari191@gmail.com"><img src="email.png" alt="GitHub"></a>
             </div>
         </div>
 
-        <div class="resume-button">
-            <button onclick="window.location.href='resume.pdf'">Download Resume</button>
+        <div class="resume-button"><a href="resume.pdf">
+            <button onclick="window.location.href='resume.pdf'">Download Resume</button></a>
         </div>
     </div>
 </body>
