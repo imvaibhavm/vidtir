@@ -1,1 +1,255 @@
-Hi ! My name is Vidushi Tiwari
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidushi Tiwari</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #c19aff, #ffccb9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #4d004d;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile {
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4d004d;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .pronouns, .role {
+            font-size: 1.1rem;
+            color: #4d004d;
+            margin-top: 5px;
+        }
+
+        .about h2, .education h2, .experience h2, .social-media h2 {
+            font-size: 1.4rem;
+            color: #4d004d;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #4d004d;
+        }
+
+        .bio, .education p, .experience p {
+            color: #4d004d;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-weight: bold;
+            color: #4d004d;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .icons img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .resume-button {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #4d004d;
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #3b003b;
+        }
+
+        /* Container for logo and overlay */
+        .container2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        /* Centered overlay box styling */
+        .overlay-box {
+            position: fixed; /* Change to fixed to center it on the screen */
+            top: 50%;
+            left: 50%;
+            width: 80vw;              /* Set width to 80% of the viewport width */
+            max-width: 700px;         /* Maximum width to prevent it from being too wide */
+            max-height: 60vh;         /* Maximum height limited to 60% of viewport height */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white !important;  /* Force text color to white */
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            text-align: left;         /* Left-align text for readability */
+            overflow-y: auto;         /* Add scroll if content exceeds max height */
+            opacity: 0;
+            pointer-events: none;     /* Prevents interaction when not visible */
+            transition: opacity 0.3s ease; /* Removed color transition */
+        }
+
+        /* Display overlay box on logo hover */
+        .container2:hover .overlay-box {
+            opacity: 1;
+            pointer-events: auto;     /* Enables interaction when visible */
+        }
+
+        /* Close button styling */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Vidushi Tiwari" class="profile-pic">
+            <h1>Vidushi Tiwari</h1>
+            <p class="pronouns">(she/her)</p>
+            <p class="role">Designer, Photographer, Model</p>
+        </div>
+
+        <div class="about">
+            <p class="description"></p>
+            <p class="bio">With 3 years of experience in designing user-friendly interfaces for web and mobile applications. Creative and detail-oriented, proficient in conducting user research, wireframing, prototyping, and creating visually appealing designs.</p>
+        </div>
+
+        <div class="experience">
+            <h2>Experience</h2>
+
+            <!-- Container for logo and overlay -->
+            <div class="container2">
+                <!-- Logo -->
+                <img src="logo.png" alt="Logo" class="logo">
+                <!-- Centered Overlay Box -->
+                <div class="overlay-box">
+                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
+                    <p><strong>UI/UX Designer at TravelYaari</strong> Feb 2022 to Present</p>
+                    <p><strong>Government Projects Expertise:</strong> Spearheaded the design of mobile applications and websites for various state government bus services, including Kerala and Karnataka. Delivered user-friendly, efficient solutions tailored to the needs of public transportation systems.</p>
+                    <p><strong>End-to-End Design Solutions:</strong> Developed comprehensive digital experiences for bus and cargo services, ensuring seamless functionality from initial user interaction to final booking and service execution.</p>
+                    <p><strong>B2C Website & Application Design:</strong> Designed seamless and efficient digital solutions for B2C businesses, facilitating smooth and easy operations.</p>
+                    <p><strong>Cross-Functional Collaboration:</strong> Worked closely with stakeholders and developers to ensure the delivery of user-friendly, accessible products.</p>
+                    <p><strong>Prototyping & Wireframing:</strong> Created wireframes and interactive prototypes to visualize and iterate on design concepts.</p>
+                    <p><strong>Usability Testing:</strong> Conducted extensive user testing sessions to validate design decisions and improve product usability.</p>
+                </div>
+            </div>
+
+            <!-- Container for logo and overlay -->
+            <div class="container2">
+                <!-- Logo -->
+                <img src="logo2.png" alt="Logo2" class="logo">
+                <!-- Centered Overlay Box -->
+                <div class="overlay-box">
+                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
+                    <p><strong>UI/UX Designer at Cleartrip:</strong> Aug 2022 to Oct 2022 (3 months)</p>
+                    <p><strong>Client-Centric Design:</strong> Collaborated closely with Cleartrip as a client, leading the design of their bus booking flow for the mobile application to enhance the user experience, delivering a product that met both user needs and client goals.</p>
+                    <p><strong>User Journey Analysis:</strong> Conducted in-depth user behavior analysis to identify pain points and opportunities, leading to a design that reduced friction and improved overall user satisfaction.</p>
+                    <p><strong>Responsive & Accessible Design:</strong> Ensured the design was fully responsive and accessible, providing a consistent and user-friendly experience across all devices.</p>
+                </div>
+            </div>
+
+            <!-- Container for logo and overlay -->
+            <div class="container2">
+                <!-- Logo -->
+                <img src="logo2.png" alt="Logo2" class="logo">
+                <!-- Centered Overlay Box -->
+                <div class="overlay-box">
+                    <span class="close-btn" onclick="event.stopPropagation()">&times;</span>
+                    <p><strong>Intern Graphic Designer at Unfinance:</strong></p>
+                    <p><strong>Community Engagement:</strong> Designed user interfaces and graphics for India's leading community of millennial investors, increasing user interaction and participation.</p>
+                    <p><strong>Visual Design for Promotions:</strong> Developed visual designs for promotional campaigns that significantly increased engagement and awareness.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            <p><strong>B.A. in Design, National Institute of Design, Ahmedabad (2022)</strong></p>
+            <p>Focused on user experience design and visual communication. Developed a solid foundation in design principles and practices.</p>
+        </div>
+
+        <div class="social-media">
+            <h2>Connect with Me</h2>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/vidushi-tiwari" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/vidushi_tiwari" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://github.com/vidushi-tiwari" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+            </div>
+        </div>
+
+        <div class="resume-button">
+            <button onclick="window.location.href='resume.pdf'">Download Resume</button>
+        </div>
+    </div>
+</body>
+</html>
